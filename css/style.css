@@ -1,0 +1,410 @@
+body, html{
+    font: normal 15px / 27px "Ubuntu", Helvetica, Arial, Verdana, sans-serif;
+}
+
+body h5{
+    font: normal bold 16px / 26px "Raleway", Helvetica, Arial, Verdana, sans-serif;
+}
+
+@media (max-width: 992px){
+
+    #newheader{
+        display:none;
+    }
+}
+
+#newheader{
+    color:	#fff;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+
+#newheader .fas{
+    color:	rgba(255,69,0,1);
+}
+
+#newheader .fab{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#newheader .fab:hover{
+    color:	rgba(255,69,0,1);
+    transition: all 0.4s ease-in-out;
+}
+
+#newheader .social-icons i{
+    padding: 0 0.5rem;
+}
+
+.navbar{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #fff;
+}
+
+.navbar a{
+    color:	rgb(0,0,0);
+    font: normal 13px / 17px "Ubuntu", Helvetica, Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar .nav-link:hover{
+    color:	#fff;
+    background-color: black;
+    border-radius: 4px;
+    border-top:3px solid #02d871;
+    text-transform: uppercase;
+}
+
+.navbar .nav-link:focus/* , .navbar .active */{
+    color:	#fff;
+    background-color: rgba(255,69,0,1);
+    border-radius: 4px;
+    border-color: black;
+    text-transform: uppercase;
+}
+
+.navbar .dropdown-menu a:hover{
+    color: rgba(255,69,0,1);
+    text-transform: uppercase;
+}
+
+.navbar .dropdown-menu a:focus{
+    background-color: rgba(255,69,0,1);
+    color:black
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+#slider .animate-it {
+	animation: zoominoutsinglefeatured 20s infinite ease-in-out;
+    
+}
+
+#slider img{
+    height: 450px;
+    opacity: 0.9;
+}
+
+#slider{
+    padding-bottom: 4rem;
+}
+
+#slider .main{
+    position: relative;
+    top:-240px;
+    border-radius: 0%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+#slider .main div{
+    z-index: 7;
+    white-space: nowrap;
+    font-size:19px;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0px;
+    font-family: 'Dela Gothic One', cursive;
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px 7px;
+}
+
+#slider .sub{
+    top:-210px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255,69,0,1);
+    font-size: 26px;
+}
+
+
+
+.popOverSlider{
+    position: relative;
+    top:-110px;
+    z-index: 99;
+}
+
+.popOverSlider .card{
+    box-shadow: 0px 0px 15px 5px rgb(9 9 9 / 20%);
+    border: solid 2px #d5d5d5;
+    border-radius: 10px;
+}
+
+.popOverSlider .middle-card{
+    border: solid 2px #ff7f50;
+}
+
+#why{
+    padding-bottom: 3rem;
+}
+
+#why ul li, #courses .courses-list li, #undergraduates ul li, #postgraduates ul li, #canada ul li, #canada-deadlines ul li, #uk-deadlines ul li{
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 30px;
+}
+
+ul.pac-man li::before {
+      content: ""; 
+      position: absolute; 
+      left: 0px; 
+      top: 6px; 
+      width: 0px; 
+      height: 0px; 
+      border-right: 8px solid transparent; 
+      border-top: 8px solid #ff6600; 
+      border-left: 8px solid #ff6600; 
+      border-bottom: 8px solid #ff6600; 
+      border-top-left-radius: 8px; 
+      border-top-right-radius: 8px; 
+      border-bottom-left-radius: 8px; 
+      border-bottom-right-radius: 8px;
+}
+
+#why .zigZag{
+    margin:auto;
+    height: 10px;
+    width: 300px;
+    background:  
+    linear-gradient(135deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(225deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(315deg, white 35%, transparent 25%),
+    linear-gradient(45deg, white 35%, transparent 25%);	
+    background-size: 10px 10px;
+    background-color: #d5d5d5;
+}
+
+#courses{
+    background-color: rgba(220,220,220,0.4);
+    padding:3rem 0;
+}
+
+#courses .courses-head, #abroad .abroad-head{
+    text-align: center;
+}
+
+#courses .courses-head, #abroad .abroad-head, #undergraduates .undergraduates-head, #canada-deadlines .canada-deadlines-head, #uk-deadlines .uk-deadlines-head{
+    color: #ff6600;
+    font-weight: 800;
+}
+
+#courses hr, #abroad hr{
+    border-top:2px solid #02d871  !important;
+}
+
+#courses .courses-list ul.circle-checkmark li::before, #canada .why-canada-list ul.circle-checkmark li::before{
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    top: 6px; 
+    border: solid 8px #ff6600;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+#courses .courses-list ul.circle-checkmark li::after, #canada .why-canada-list ul.circle-checkmark li::after{
+    content: ""; 
+    position: absolute; 
+    left: 2.75%;
+    top: 9px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#canada .why-canada-list ul.circle-checkmark li::after{
+    content: ""; 
+    position: absolute; 
+    left: 0.5%;
+    top: 9px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#abroad{
+    padding: 4.25rem 0;
+}
+
+#abroad img{
+    height:155px;
+    border-radius: 10px;;
+}
+
+#abroad .img-overlay{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 0;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#abroad .img-overlay:hover{
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#abroad .img-overlay div{
+    text-align: center;
+    padding-top: 2em;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    transition: padding 0.15s, background 0.3s;
+}
+#abroad .img-overlay div:hover {
+    padding-top: calc(2em - 10px);
+    
+}
+  
+#undergraduates, #canada-deadlines, #uk-deadlines{
+    padding-top:4rem;
+    padding-bottom: 1rem;
+    background-color: rgba(220,220,220,0.4);
+}
+
+#canada-deadlines, #uk-deadlines{
+    padding-bottom: 4rem !important;
+}
+
+#postgraduates{
+    padding-top:1px;
+    padding-bottom: 4.25rem;
+    background-color: rgba(220,220,220,0.4);
+}
+
+.owl-carousel .owl-nav button{
+    font-size: 4rem !important;
+    margin: 0.5rem 1rem !important;
+}
+
+.owl-carousel .owl-nav button:hover{
+    background: white !important;
+    color: black !important;
+}
+
+.owl-carousel .owl-nav button:focus{
+    background: white !important;
+    color: black !important;
+    outline: none !important;
+}
+
+#aboutus .header, #why .header, #usa .header, #canada .header, #uk .header{
+    background: linear-gradient(135deg, rgba(255,69,0,.8) 17%, #333333 17%);
+}
+
+#aboutus h3, #why h3, #usa h3, #canada h3, #uk h3{
+    font: normal 600 30px / 40px "Raleway", Helvetica, Arial, Verdana, sans-serif;
+    color: rgba(255,69,0,.9);
+    text-align: center;
+    padding:1.5rem 0;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px){
+    .container-about{
+        display: grid;
+        grid-column-gap: 50px;
+        grid-template-columns: calc(100% - 280px - 25px) calc(280px - 25px);
+    }
+}
+
+#aboutus .content{
+    font: normal 15px / 27px "Ubuntu", Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: normal;
+    color: #000000;
+}
+
+.sidebar .card{
+    box-shadow: 0 6px 18px rgb(0 0 0 / 10%);
+    background: linear-gradient(135deg, rgba(255,69,0,.9) 15%, #ececec99 15%,#e7e7e799 100%) !important;
+    border-radius: 10px;
+    border:none;
+}
+
+.sidebar .card-title{
+    text-transform: uppercase;
+    font: normal bold 16px / 26px "Raleway", Helvetica, Arial, Verdana, sans-serif;
+    color: #18A340;
+}
+
+.sidebar h5{
+    color:#18A340;
+}
+
+.sidebar .form-card{
+    margin-top: 3rem;
+}
+
+.sidebar .btn-usa{
+    font-family: "Raleway", Helvetica, Arial, Verdana, sans-serif;
+    color: #000;
+    font-weight: 600;
+    background-color: rgba(255,69,0,.9);
+    border-radius: 1.25em;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    line-height: 2;
+}
+
+.sidebar .btn-usa:hover{
+    background-color: transparent;
+    border: 1px solid rgba(255,69,0,.9);
+    color: rgba(255,69,0,.9);
+}
+
+@media (max-width: 992px){
+    .sidebar .get-in-touch{
+        margin-top:3rem;
+    }
+    .sidebar .card-body{
+        padding-left: 5rem;
+    }
+}
+
+#footer{
+    padding:4.25rem 0;
+    background-color: black;
+   
+}
