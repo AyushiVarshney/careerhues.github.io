@@ -158,7 +158,8 @@ body h5{
     padding-bottom: 3rem;
 }
 
-#why ul li, #courses .courses-list li, #undergraduates ul li, #postgraduates ul li, #canada ul li, #canada-deadlines ul li, #uk-deadlines ul li{
+#why ul li, #courses .courses-list li, #undergraduates ul li, #postgraduates ul li, #canada ul li, 
+#canada-deadlines ul li, #uk ul li, #australia ul li, #undergraduates-australia ul li, #postgraduates-australia ul li{
     list-style: none;
     position: relative;
     padding: 0 0 0 30px;
@@ -203,7 +204,8 @@ ul.pac-man li::before {
     text-align: center;
 }
 
-#courses .courses-head, #abroad .abroad-head, #undergraduates .undergraduates-head, #canada-deadlines .canada-deadlines-head, #uk-deadlines .uk-deadlines-head{
+#courses .courses-head, #abroad .abroad-head, #undergraduates .undergraduates-head, 
+#canada-deadlines .canada-deadlines-head, #uk-deadlines .uk-deadlines-head, #undergraduates-australia .undergraduates-head{
     color: #ff6600;
     font-weight: 800;
 }
@@ -212,7 +214,8 @@ ul.pac-man li::before {
     border-top:2px solid #02d871  !important;
 }
 
-#courses .courses-list ul.circle-checkmark li::before, #canada .why-canada-list ul.circle-checkmark li::before{
+#courses .courses-list ul.circle-checkmark li::before, #canada .why-canada-list ul.circle-checkmark li::before,
+#uk .why-uk-list ul.circle-checkmark li::before, #australia .why-australia-list ul.circle-checkmark li::before{
     content: ""; 
     position: absolute; 
     left: 0; 
@@ -223,7 +226,7 @@ ul.pac-man li::before {
     -webkit-border-radius: 8px;
 }
 
-#courses .courses-list ul.circle-checkmark li::after, #canada .why-canada-list ul.circle-checkmark li::after{
+#courses .courses-list ul.circle-checkmark li::after{
     content: ""; 
     position: absolute; 
     left: 2.75%;
@@ -238,10 +241,11 @@ ul.pac-man li::before {
     transform: rotate(45deg);
 }
 
-#canada .why-canada-list ul.circle-checkmark li::after{
+#canada .why-canada-list ul.circle-checkmark li::after, #uk .why-uk-list ul.circle-checkmark li::after,
+#australia .why-australia-list ul.circle-checkmark li::after{
     content: ""; 
     position: absolute; 
-    left: 0.5%;
+    left: 4px;
     top: 9px;
     width: 4px;
     height: 8px;
@@ -265,15 +269,16 @@ ul.pac-man li::before {
 #abroad .img-overlay{
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     top:0;
     left:0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.3);
     width: 100%;
     height:100%;
     background-position: center center;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 0;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -286,19 +291,20 @@ ul.pac-man li::before {
 }
 
 #abroad .img-overlay div{
+    padding:0 3px;
+    overflow-wrap: anywhere;
     text-align: center;
-    padding-top: 2em;
     color: #fff;
     font-size: 24px;
     font-weight: 700;
     transition: padding 0.15s, background 0.3s;
 }
 #abroad .img-overlay div:hover {
-    padding-top: calc(2em - 10px);
+    padding-bottom: calc(2em - 10px);
     
 }
   
-#undergraduates, #canada-deadlines, #uk-deadlines{
+#undergraduates, #canada-deadlines, #uk-deadlines, #undergraduates-australia{
     padding-top:4rem;
     padding-bottom: 1rem;
     background-color: rgba(220,220,220,0.4);
@@ -308,7 +314,8 @@ ul.pac-man li::before {
     padding-bottom: 4rem !important;
 }
 
-#postgraduates{
+
+#postgraduates, #postgraduates-australia{
     padding-top:1px;
     padding-bottom: 4.25rem;
     background-color: rgba(220,220,220,0.4);
@@ -330,11 +337,11 @@ ul.pac-man li::before {
     outline: none !important;
 }
 
-#aboutus .header, #why .header, #usa .header, #canada .header, #uk .header{
+#aboutus .header, #why .header, #usa .header, #canada .header, #uk .header, #australia .header, #germany .header{
     background: linear-gradient(135deg, rgba(255,69,0,.8) 17%, #333333 17%);
 }
 
-#aboutus h3, #why h3, #usa h3, #canada h3, #uk h3{
+#aboutus h3, #why h3, #usa h3, #canada h3, #uk h3, #australia h3, #germany h3{
     font: normal 600 30px / 40px "Raleway", Helvetica, Arial, Verdana, sans-serif;
     color: rgba(255,69,0,.9);
     text-align: center;
@@ -348,12 +355,26 @@ ul.pac-man li::before {
         grid-column-gap: 50px;
         grid-template-columns: calc(100% - 280px - 25px) calc(280px - 25px);
     }
+    .mBottom{
+        margin-bottom:2.5rem;
+    }
 }
 
 #aboutus .content{
     font: normal 15px / 27px "Ubuntu", Helvetica, Arial, Verdana, sans-serif;
     word-spacing: normal;
     color: #000000;
+}
+
+.content .btn-usa{
+    font-family: "Raleway", Helvetica, Arial, Verdana, sans-serif;
+    color: #fff;
+    font-size:18px;
+    font-weight: 700;
+    background-color: rgba(255,69,0,.9);
+    border-radius: .5em;
+    letter-spacing: 1px;
+    padding:.5em 2em;
 }
 
 .sidebar .card{
@@ -408,3 +429,4 @@ ul.pac-man li::before {
     background-color: black;
    
 }
+

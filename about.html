@@ -18,79 +18,8 @@
   </head>
   <body>
 
-    <div id="newheader" style="background-color:black">
-        <div class="container-fluid m-0 header">
-            <div class="row p-2">
-                <div class="col-md-2">
-                    <i class="fas fa-phone-alt"></i>
-                    +91-08077576230
-                </div>
-                <div class="col-md-3 p-0">
-                    <i class="fas fa-envelope"></i>
-                    hi@careerhues.com
-                </div>
-                <div class="col-md-3">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Star plaza, Baccha park Meerut
-                </div>
-                <!-- <div class="col-md-1"></div> -->
-                <div class="col-md-4 social-icons">
-                    <ul class="list-inline mb-0" style="justify-content: flex-end;display: flex;">
-                        <li class="list-inline-item"><a target ="_blank" href="https://www.facebook.com/Career-Hues-101286711258369/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a target ="_blank" href=""><i class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a target ="_blank" href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a target ="_blank" href=""><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar">
-            <span class="navbar-toggler-icon">&#9776;</span>
-        </button>
-        
-        <a href="#" class="navbar-brand"><img src="img/logos/logo.png" class ="img-fluid"></a>
-        <div class="collapse navbar-collapse"id = "navigation-bar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#why" class="nav-link">WHY US</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#courses" class="nav-link">OUR Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#career-mapping" class="nav-link">Career Mapping</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Study Abroad
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" target="_blank" href="countries.html">Planing For USA?</a>
-                      <a class="dropdown-item" href="countries.html#canada" target="_blank">Interested In Canada?</a>
-                      <a class="dropdown-item" href="countries.html#uk" target="_blank">Fascinated By UK?</a>
-                      <a class="dropdown-item" href="#">How About Australia?</a>
-                      <a class="dropdown-item" href="#">Drawn to germany?</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Immigration</a>
-                    </div>
-                  </li>
-                <li class="nav-item">
-                    <a href="#footer" class="nav-link">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div id="black-header"></div>
+    <div id="navbar"></div>
 
     <!--About Us STARTS-->
 
@@ -172,6 +101,11 @@
               new WOW().init();
     </script>
     <script type="text/javascript">
+        $(function(){
+            $("#black-header").load("header.html");
+            $("#footer").load("footer.html"); 
+            $('#navbar').load("navbar.html");
+        });
         $(document).ready(function(){
             $( "ul li:nth-child(2)" ).addClass('active').siblings().removeClass('active');
         });
