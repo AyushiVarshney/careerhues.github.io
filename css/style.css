@@ -145,6 +145,15 @@ body h5{
     z-index: 99;
 }
 
+.popOverSlider .card{
+    margin-top:10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.popOverSlider .card:hover{
+    margin-top: 0;
+}
+
 .popOverSlider .card, #germany .why-germany .card, #immigration .card{
     box-shadow: 0px 0px 15px 5px rgb(9 9 9 / 20%);
     border: solid 2px #d5d5d5;
