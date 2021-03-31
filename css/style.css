@@ -144,14 +144,18 @@ body h5{
     z-index: 99;
 }
 
-.popOverSlider .card{
+.popOverSlider .card, #germany .why-germany .card, #immigration .card{
     box-shadow: 0px 0px 15px 5px rgb(9 9 9 / 20%);
     border: solid 2px #d5d5d5;
     border-radius: 10px;
 }
 
-.popOverSlider .middle-card{
+.popOverSlider .middle-card, #germany .why-germany .card, #immigration .card{
     border: solid 2px #ff7f50;
+}
+
+#germany .why-germany .card .card-title{
+    font-size: 16px;
 }
 
 #why{
@@ -159,7 +163,8 @@ body h5{
 }
 
 #why ul li, #courses .courses-list li, #undergraduates ul li, #postgraduates ul li, #canada ul li, 
-#canada-deadlines ul li, #uk ul li, #australia ul li, #undergraduates-australia ul li, #postgraduates-australia ul li{
+#canada-deadlines ul li, #uk ul li, #australia ul li, #undergraduates-australia ul li, 
+#postgraduates-australia ul li, #germany-deadlines ul li{
     list-style: none;
     position: relative;
     padding: 0 0 0 30px;
@@ -205,7 +210,8 @@ ul.pac-man li::before {
 }
 
 #courses .courses-head, #abroad .abroad-head, #undergraduates .undergraduates-head, 
-#canada-deadlines .canada-deadlines-head, #uk-deadlines .uk-deadlines-head, #undergraduates-australia .undergraduates-head{
+#canada-deadlines .canada-deadlines-head, #uk-deadlines .uk-deadlines-head, 
+#undergraduates-australia .undergraduates-head, #gremany-deadlines .germany-deadlines-head{
     color: #ff6600;
     font-weight: 800;
 }
@@ -304,7 +310,7 @@ ul.pac-man li::before {
     
 }
   
-#undergraduates, #canada-deadlines, #uk-deadlines, #undergraduates-australia{
+#undergraduates, #canada-deadlines, #uk-deadlines, #undergraduates-australia, #germany-deadlines{
     padding-top:4rem;
     padding-bottom: 1rem;
     background-color: rgba(220,220,220,0.4);
@@ -319,6 +325,15 @@ ul.pac-man li::before {
     padding-top:1px;
     padding-bottom: 4.25rem;
     background-color: rgba(220,220,220,0.4);
+}
+
+#career-mapping .career-icons{
+    font-size: 48px;
+    color:#ff6600;
+}
+
+#career-mapping .career-icons:hover{
+    cursor: pointer;
 }
 
 .owl-carousel .owl-nav button{
@@ -337,11 +352,12 @@ ul.pac-man li::before {
     outline: none !important;
 }
 
-#aboutus .header, #why .header, #usa .header, #canada .header, #uk .header, #australia .header, #germany .header{
+#aboutus .header, #why .header, #usa .header, #canada .header, #uk .header, #australia .header, #germany .header, 
+#immigration .header, #career-mapping .header{
     background: linear-gradient(135deg, rgba(255,69,0,.8) 17%, #333333 17%);
 }
 
-#aboutus h3, #why h3, #usa h3, #canada h3, #uk h3, #australia h3, #germany h3{
+#aboutus h3, #why h3, #usa h3, #canada h3, #uk h3, #australia h3, #germany h3, #immigration h3, #career-mapping h3{
     font: normal 600 30px / 40px "Raleway", Helvetica, Arial, Verdana, sans-serif;
     color: rgba(255,69,0,.9);
     text-align: center;
