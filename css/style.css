@@ -136,7 +136,9 @@ body h5{
     font-size: 26px;
 }
 
-
+.popOverSlider .material-icons{
+    font-size: 36px;
+}
 
 .popOverSlider{
     position: relative;
