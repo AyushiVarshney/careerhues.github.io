@@ -345,7 +345,8 @@ ul.pac-man li::before {
 }
 
 #abroad{
-    padding: 4.25rem 0;
+    padding-top: 4.25rem;
+    padding-bottom: 7rem;
 }
 
 #abroad img{
