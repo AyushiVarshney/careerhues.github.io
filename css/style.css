@@ -148,6 +148,10 @@ body h5{
     padding: 0px 7px;
 }
 
+#slider .carousel-caption{
+    bottom: .50px;
+}
+
 #slider .sub{
     top:-210px;
     position: relative;
