@@ -368,7 +368,7 @@
                     </h3>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-fluid" src="img/Top-60-Employee-Engagement-image43-1024x510.png" alt="">
+                    <img class="img-fluid" src="img/career-counselling.jpg" alt="">
                 </div>
             </div>
             <div class="row">
@@ -453,17 +453,43 @@
             };
             window.requestAnimationFrame(step);
         }
-        const counselObj = document.getElementById("counsel");
-        animateValue(counselObj, 0, 1000, 3000);
 
-        const universitiesObj = document.getElementById("universities");
-        animateValue(universitiesObj, 0, 750, 2500);
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                function Utils() {}
+                Utils.prototype = {
+                    constructor: Utils,
+                    isElementInView: function (element, fullyInView) {
+                        var pageTop = $(window).scrollTop();
+                        var pageBottom = pageTop + $(window).height();
+                        var elementTop = $(element).offset().top;
+                        var elementBottom = elementTop + $(element).height();
 
-        const graduateObj = document.getElementById("graduate");
-        animateValue(graduateObj, 0, 400, 2000);
+                        if (fullyInView === true) {
+                            return ((pageTop < elementTop) && (pageBottom > elementBottom));
+                        } else {
+                            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+                        }
+                    }
+                };
+                var Utils = new Utils();
+                var isElementInView = Utils.isElementInView($('#stats'), false);
 
-        const countriesObj = document.getElementById("countries");
-        animateValue(countriesObj, 0, 25, 1000);
+                if (isElementInView) {
+                    console.log('in view');
+                    const counselObj = document.getElementById("counsel");
+                    animateValue(counselObj, 0, 1000, 1500);
+                    const universitiesObj = document.getElementById("universities");
+                    animateValue(universitiesObj, 0, 750, 1500);
+
+                    const graduateObj = document.getElementById("graduate");
+                    animateValue(graduateObj, 0, 400, 1000);
+
+                    const countriesObj = document.getElementById("countries");
+                    animateValue(countriesObj, 0, 25, 500);
+                } 
+            });
+        });
     </script>
   </body>
 </html>
