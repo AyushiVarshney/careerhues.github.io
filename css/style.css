@@ -596,8 +596,45 @@ ul.pac-man li::before {
 
 
 #footer{
-    padding:4.25rem 0;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    padding-top:4.25rem;
     background-color: black;
-   
+    color:#fff;
 }
 
+#footer .email{
+    color:#fff;
+}
+#footer img{
+    background-color: white;
+    padding: .8rem 0;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+#footer .icon .fab, #footer .icon .fas{
+    font-size: 1.25rem;
+    color: #fff;
+    border: 1px solid rgba(46, 49, 49, 0.3);
+    background-color: rgba(46, 49, 49, 0.3);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    padding:25% 0;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#footer .icon .fab:hover, #footer .icon .fas:hover{
+    color: #202020;
+    background-color: #fff;
+}
+
+#footer .copyRight{
+    background-color: rgba(46, 49, 49, 0.3); 
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
