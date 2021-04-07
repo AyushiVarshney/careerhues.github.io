@@ -7,11 +7,11 @@ body h5{
 }
 
 @media (max-width: 768px){
-    #admission .row{
+    #admission .row, #our-services .row{
         margin-bottom: 0 !important;
     }
 
-    #admission .col-md-4{
+    #admission .col-md-4, #our-services .col-md-4{
         margin-bottom:1.5rem;
     }
 
@@ -326,18 +326,18 @@ ul.pac-man li::before {
 }
 
 
-#admission img{
+#admission img, #our-services img{
     border-radius: 50%;
 }
 
-#admission h3{
+#admission h3, #our-services h3{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
     margin-top: 1.5rem;
 }
 
-#admission .card{
+#admission .card, #our-services .card{
     box-shadow: 0 6px 20px rgb(0 0 0 / 40%);
     border-radius: 15px;
 }
@@ -348,6 +348,11 @@ ul.pac-man li::before {
     border-color: white;
     border-bottom-color: black;
     background: linear-gradient(315deg, rgba(255,69,0,0.9) 30%, white 42%,white 100%) !important;
+}
+
+#our-services .card:hover{
+    transform: scale(1.09);
+    transition: 1s ease-in-out;
 }
 
 #stats{
@@ -393,7 +398,7 @@ ul.pac-man li::before {
 }
 
 #counselling{
-    padding:4rem 0;
+    padding:4rem 0 4.5rem 0;
 }
 
 #canada .why-canada-list ul.circle-checkmark li::after, #uk .why-uk-list ul.circle-checkmark li::after,
@@ -495,6 +500,12 @@ ul.pac-man li::before {
 #assessment, #mentorship{
     background-color: rgba(220,220,220,0.4);
     padding:4.25rem 0;
+}
+        
+#our-services {
+    margin-top:4rem ;
+    padding:3rem 0;
+    background-image: linear-gradient(110deg, rgba(189, 189, 189, 0.4), rgb(169, 227, 239)) !important;
 }
 
 #odd-service {
